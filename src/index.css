@@ -1,8 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Josefin Sans";
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +9,188 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.main1{
+  margin-left: auto;
+  margin-right: auto;
+  
+  width: 375px;
+  height: 600px;
+}
+
+.main{
+  background-image: url('./Pictures/light-mobile.jpg');
+  background-repeat: no-repeat;
+  
+  position: relative; 
+  
+  height: 100%; 
+  bottom: 25px;
+  padding: 10px;
+  background-color: white;
+  
+  
+}
+.p1{
+  color: white;
+  font-size: 25px;
+  font-weight: 650;
+}
+.dark-mode{
+  background-image: url('./Pictures/dark-mobile.jpg');
+  background-repeat: no-repeat;
+  position: relative; 
+  width: 95%;
+  height: 100%; 
+  bottom: 25px;
+ background-color: #171823;
+  padding: 10px;
+}
+.lightbtn{
+  background-image: url('./Pictures/Combined\ Shape.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+  background-color: none;
+  border: 0px;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+.darkbtn{
+  background-image: url('./Pictures/Combined\ Shape\ \(1\).png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+  background-color: none;
+  border: 0px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input{
+  outline: 0;
+}
+
+.input1{
+  
+  width: 340px;
+  height: 35px;
+  border-radius: 5px;
+  border: 0px;
+  
+}
+.delete:hover{
+  cursor: pointer;
+
+}
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.todo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  max-height: 300px; 
+  overflow-y: auto; 
+ 
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #9c9b9b;
+}
+.clearcompleted{
+  
+  color: white;
+  border: 0px;
+
+}
+.clearcompleted:hover{
+  cursor: pointer;
+}
+@media screen and (min-width: 1200px){
+  .main{
+    background-image: url('./Pictures/light-desktop.png');
+    background-repeat: no-repeat;
+    
+    position: relative; 
+    width: 95%;
+    
+    height: 100%; 
+    bottom: 25px;
+    padding: 10px;
+    background-color: white;
+    
+    
+    
+  }
+  .dark-mode{
+    background-image: url('./Pictures/dark-desktop.jpg');
+    background-repeat: no-repeat;
+    position: relative; 
+    width: 95%;
+    height: 100%; 
+    bottom: 25px;
+   background-color: #171823;
+    padding: 10px;
+    
+   
+   
+    
+    
+  }
+  .main1{
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 1200px;
+    height: 650px;
+   
+  }
+  .inside{
+    width: 500px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+  .input1{
+    
+    
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+  }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+  }
+  
 }
